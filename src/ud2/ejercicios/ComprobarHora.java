@@ -3,7 +3,7 @@ package ud2.ejercicios;
 public class ComprobarHora {
 
     static void compruebaHora(int hora, int minutos, int segundos) {
-
+        
     }
 
     public static void main(String[] args) {
