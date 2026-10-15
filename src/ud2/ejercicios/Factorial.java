@@ -11,7 +11,7 @@ public class Factorial {
         System.out.print("Introduce un número para calcular su factorial: ");
         int n = sc.nextInt();
         sc.close();
-
+        // TODO Versión con BigDecimal
         long factorial = 1;
 
         for (int i = 1; i <= n; i++) {
