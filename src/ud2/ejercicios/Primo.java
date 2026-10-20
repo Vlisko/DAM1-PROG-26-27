@@ -1,9 +1,10 @@
 package ud2.ejercicios;
 
 import java.util.Scanner;
+
 /**
  * @author Fran
- * Primo
+ *         Primo
  */
 
 public class Primo {
@@ -15,11 +16,17 @@ public class Primo {
         System.out.println(esPrimo(n));
     }
 
-    static boolean esPrimo(int n) {
-        if (n == 1 || n % n == 0 && n % 2 != 0) {
-            return true;
+    public static boolean esPrimo(int n) {
+        if (n < 2) {
+            return false;
         }
 
-        return false;
+        for (int i = 2; i < n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
